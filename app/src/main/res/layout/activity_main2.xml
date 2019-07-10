@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pkm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#15b106"
+        android:gravity="center"
+        android:text="Tuesday"
+        android:textColor="#fffb00"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0"
+        tools:background="#000000">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/pk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000">
+
+            <Button
+                android:id="@+id/button3"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/btnbg"
+                android:onClick="dolun2"
+                android:text="Lunch"
+                android:textColor="#ffaa00"
+                android:textSize="36sp"
+                android:typeface="serif"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/btnbg"
+                android:onClick="dosnack2"
+                android:text="Snack"
+                android:textColor="#00ff19"
+                android:textSize="36sp"
+                android:typeface="serif"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/btnbg"
+                android:onClick="dodinner2"
+                android:selectAllOnFocus="false"
+                android:text="Dinner"
+                android:textColor="#0011ff"
+                android:textSize="36sp"
+                android:typeface="serif"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+            <Button
+                android:id="@+id/button4"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btnbg"
+                android:gravity="center"
+                android:onClick="dob2"
+                android:text="Breakfast"
+                android:textColor="#ff00fb"
+                android:textSize="36sp"
+                android:typeface="serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

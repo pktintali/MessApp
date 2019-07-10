@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pktintali.com.messglbajaj">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logonew"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main1Activity" />
+        <activity android:name=".m1break" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".MainActivity3" />
+        <activity android:name=".MainActivity4" />
+        <activity android:name=".MainActivity5" />
+        <activity android:name=".MainActivity6" />
+        <activity android:name=".MainActivity7" />
+        <activity android:name=".m2break" />
+        <activity android:name=".m3break" />
+        <activity android:name=".m4break" />
+        <activity android:name=".m5break" />
+        <activity android:name=".m6break" />
+        <activity android:name=".m7break" />
+        <activity android:name=".m1lun" />
+        <activity android:name=".m2lunch" />
+        <activity android:name=".m3lunch" />
+        <activity android:name=".m4lunch" />
+        <activity android:name=".m5lunch" />
+        <activity android:name=".m6lunch" />
+        <activity android:name=".m7lunch" />
+        <activity android:name=".m1snack" />
+        <activity android:name=".m2snack" />
+        <activity android:name=".m3snack" />
+        <activity android:name=".m4snack" />
+        <activity android:name=".m5snack" />
+        <activity android:name=".m6snack" />
+        <activity android:name=".m7snack" />
+        <activity android:name=".m1dinner" />
+        <activity android:name=".m2dinner" />
+        <activity android:name=".m3dinner" />
+        <activity android:name=".m4dinner" />
+        <activity android:name=".m5dinner" />
+        <activity android:name=".m6dinner" />
+        <activity android:name=".m7dinner" />
+        <activity android:name=".Main8Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="google.com"
+                    android:pathPrefix="/search" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+    </application>
+
+</manifest>
